@@ -7,10 +7,6 @@
 # Libraries and read raw data
 #######################################################
 
-library(Seurat)
-library(ggplot2)
-library(ggthemes)
-library(cowplot)
 
 data.seurat.qc.std.dop.high_5<-readRDS("raw_data/data.seurat.qc.std.dop.high_5.rds")
 data.seurat.qc.std.dop.high_5$DA_type_2 <- ifelse(data.seurat.qc.std.dop.high_5$DA_type=="TH Low", "TH Early","TH Late")

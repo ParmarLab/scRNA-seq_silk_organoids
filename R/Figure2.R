@@ -3,30 +3,13 @@
 # Figure 2 Single cell transcriptomics identifying VM organoid cell types
 ######################################################
 
-#a, Uniform manifold approximation and projection (UMAP) plot showing clustering of 91,034 analyzed cells from VM organoids at day 15, 30, 60, 90, and 120. Cell type assignments are indicated.
-#b, UMAP plot of cells color-coded by organoid of origin. c, Dot plot showing expression levels of indicated genes per cluster. Indicated genes are established markers for neural progenitors, 
-#floor plate progenitors, DA neurons, astrocytes, oligodendrocyte and vascular leptomeningeal cells. d, Silhouette plot and scores showing the difference between mean distance to cells within the same and nearest clusters. 
-#e, f, Representative curves showing proportion of cells as a percentage for each cluster during VM organoid differentiation (day 15–120). g, RNA velocity plotted on UMAP representing location of estimated future cell state.
-#h, Developmental trajectory from pluripotency to terminally differentiated stages reconstructed using SPRING in VM organoid. Pseudocells are color-graded by total count. Bottom right, pseudocells are color-coded by cell type assignments.  i, SPRING plot colored (purple) by marker gene expression of emerging cellular clusters. 
-
-
 
 #######################################################
 # Libraries and read raw data
 #######################################################
 
-library(Seurat)
-library(ggplot2)
-library(ggthemes)
-library(cowplot)
-
 data.seurat.qc.std <- readRDS("raw_data/data.seurat.qc.std.20201007.rds")
-palettes <- ggthemes_data[["tableau"]][["color-palettes"]][["regular"]]
-
-
 data.seurat.qc.std$Cycling <- ifelse(data.seurat.qc.std$Phase=="G1","-","+")
-
-system("mkdir -p results")
 
 #######################################################
 # A

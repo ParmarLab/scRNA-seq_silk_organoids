@@ -7,15 +7,7 @@
 # Libraries and read raw data
 #######################################################
 
-library(Seurat)
-library(ggplot2)
-library(ggthemes)
-library(cowplot)
 
-
-palettes <- ggthemes_data[["tableau"]][["color-palettes"]][["regular"]]
-
-system("mkdir -p results")
 
 data.seurat<-readRDS("raw_data/data.seurat.qc.std.SILK.3groups.RDS")
 
