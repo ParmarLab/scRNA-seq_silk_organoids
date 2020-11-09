@@ -1,0 +1,13 @@
+## library() calls go here
+#library(conflicted)
+#library(dotenv)
+library(drake)
+library(Seurat)
+library(ggplot2)
+library(ggthemes)
+library(cowplot)
+library(pheatmap)
+library(gplots)
+library(reshape2)
+library(dplyr)
+suppressPackageStartupMessages(library(DESeq2))
