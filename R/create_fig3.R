@@ -122,6 +122,11 @@ create_fig3 <- function() {
   # F
   #######################################################
   
+  cult.reclust_dopa<-readRDS("raw_data/data.seurat.fetal.rds")
+  DimPlot(cult.reclust_dopa,,pt.size = 1.02)+scale_color_manual(values = c("#ababab","#595959","#9a532b","#503143","#a2c8ec"))
+  DimPlot(cult.reclust_dopa,,pt.size = 1.02)+scale_color_manual(values = c("#ababab","#595959","#f77f00","#d62828","#"))  ggsave("results/3I.fetalumap.pdf",w=12,h=8)
+  
+  
   
   return(NULL)
 
