@@ -2,7 +2,7 @@
 This repo holds the code for the paper "Single cell transcriptomics captures features of developing and mature DA neurons in human brain organoids and reveals more precise and reproducible patterning in silk-bioengineered culture"
 
 ## How to recreate figures
-Please rund `source("R/create_figures.R")` to genereate all figures into the results-folder. Please ensure that you have all packages from packages.R installed.   
+Please run `_drake.R` to genereate all figures into the results-folder. Please ensure that you have all packages from packages.R installed.   
 
 
 ## Abstract
